@@ -12,10 +12,10 @@ Program will replace certain letters with similar-looking letters
 
 | Behaviors | Input | Output |
 |-----------|-------|--------|
-|Replace the letter "e" with "3"|e|3|
-|Replace the letter "o" with "0"|o|0|
+|Replace the letter "e" and "E" with "3"|e|3|
+|Replace the letter "o" and "O" with "0"|o|0|
 |Replace the letter capital "I" with "1"|I|1|
-|Replace the letter "s" with "z" UNLESS it is the first letter of the word |s|z|
+|Replace the letter "s" and "S" with "z" UNLESS it is the first letter of the word |s|z|
 
 ## Setup/Installation Requirements
 
