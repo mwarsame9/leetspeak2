@@ -2,26 +2,27 @@ class String
   define_method(:leetspeak) do
     letters = self.split("")
     new_array = []
+    x = new_array 
     letters.each_with_index() do |letter,index|
       if letter.downcase()=== ("e")
-          new_array.push("3")
+          x.push("3")
         elsif letter.downcase()=== ("o")
-          new_array.push("0")
+          x.push("0")
         elsif letter.=== ("I")
-          new_array.push("1")
+          x.push("1")
         elsif letter.downcase()=== ("s")
           if letters[index-1].===(" ")
-            new_array.push(letter)
+            x.push(letter)
             else
-            new_array.push("z")
+            x.push("z")
           end
         else
-          new_array.push(letter)
+          x.push(letter)
       end
-      if new_array[0].===("z")
-        new_array[0].replace("S")
+      if x[0].===("z")
+        x[0].replace("S")
       end
     end
-      new_array.join("")
+      x.join("")
   end
 end
